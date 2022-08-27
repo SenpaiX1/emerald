@@ -1,0 +1,5 @@
+{
+    "name": "Emerald Proxy",
+    "description": "A node.js web proxy featuring URL encoding, and amazing compatablity!",
+    "keywords": ["node", "proxy", "unblocker"]
+}
