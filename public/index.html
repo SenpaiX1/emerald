@@ -2,60 +2,64 @@
    <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       <meta property="og:image" content="/assets/img/1736-emerald.png" />
+     <meta property="og:image" content="/assets/img/1736-emerald.png" />
+   <meta name="description" content="Emerald Proxy is an Alloy Based Proxy that includes tab cloaking and games" />
       <!-- Important: Use &zwnj; to mess with keywords.  -->
       <title>Emer&zwnj;ald  Pro&zwnj;xy</title>
-      <link rel="icon">
+      <link rel="icon" type="image/png" href="assets/img/1736-emerald.png"/>
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Roboto&amp;display=swap" rel="stylesheet">
       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-       <script src="https://kit.fontawesome.com/fc2d31c16f.js" crossorigin="anonymous"></script>
+      <script src="https://kit.fontawesome.com/fc2d31c16f.js" crossorigin="anonymous"></script>
       <link rel="stylesheet" href="/assets/css/styles.css">
    </head>
-   <body id="body">
-      <!--Display Frame-->
-      <iframe id="frame" style="display:block; visibility: hidden;"></iframe> 
-     <div id="img">
-         <img src="https://cdn-icons-png.flaticon.com/128/7588/7588907.png" onclick="openNav()" id="img">
-         </img>
-         
-       </i>
-     </div>
-      <div id="mySidenav" class="sidenav">
-         <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-         <a href="/index.html">Home</a>
-         <a href="/games.html">Games</a>
-         <a href="/contact.html">Contact</a>
-         <a onclick="abcloak()">about:blank</a>
-         <div id="about:blank">
-           
+   <body>
+      <div id="particles-js">
+      <div class="App">
+      <div class="App-header">
+         <!--Display Frame-->
+         <iframe id="frame" style="display:block; visibility: hidden;"></iframe> 
+         <div id="img" class="show" style="cursor: pointer;">
+            <i class="fa-solid fa-bars fa-3x" id="img" onclick="openNav()"></i>
+            </i>
          </div>
-      </div>
-      <div id="settings">
-            <button onclick="openTab()" class="button btn" style="vertical-align:middle"><span>             <i class="fa-solid fa-gear fa-2x"></i>
-
-      </div>
-      <div>
+         <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="/index.html">Home</a>
+            <a href="/games.html">Games</a>
+            <a href="/bookmarklet.html">Bookmarklet</a>
+            <a href="/contact.html">Contact</a>
+            <a onclick="abcloak()" style="cursor: pointer;">about:blank</a>
+         </div>
+         <div id="settings">
+            <button onclick="openTab()" class="button btn" style="vertical-align:middle"/>
+               <span>             <i class="fa-solid fa-gear fa-1x"></i></span>
+         </div>
+         <div id="main">
          <h1> <span class="black_text">Em&zwnj;erald pro&zwnj;xy</span> </h1>
-         <form class="url" method="POST" "="">
-            <input style="border: 2px solid black;
-               border-radius: 4px;" name="url" id="iurl" autocomplete="off" placeholder="Browse the web" type="text">
-            <button class="btn" type="submit" id="alloydefault">G&zwnj;o!</button>
+         <form class="url" method="POST">
+         <input name="url" id="iurl" autocomplete="off" placeholder="Browse the web" type="text">
+         <button class="button2" type="submit" id="alloydefault">G&zwnj;o!</button>
          </form>
-      </div>
-      <div id="footm">
-         <p>
-            <a href="https://discord.gg/xVCnVwqFHt">Discord</a> | <a href="https://github.com/frog22222/emerald">Github</a>
-         </p>
-      </div>
-      <!--Tab Cloaking-->
-      <div id="popup">
-         <div>
-            <input id="title" placeholder="Enter a title">
-            <button onclick="setTitle()">Set</button>
+          <p>Pre&zwnj;ss " , " w&zwnj;hen a teac&zwnj;her is c&zwnj;om&zwnj;ing</p>
          </div>
-         <div>  
-            <input id="icon" placeholder="Enter a favicon URL">
-            <button onclick="setIcon()">Set</button>
+         <div id="footm">
+            <p>
+               <a href="https://discord.gg/xVCnVwqFHt">
+               <i class="fa-brands fa-discord icon"></i> Discord</a> | <a href="https://github.com/frog22222/emerald"><i class="fa-brands fa-github marginme icon"></i> Github</a>
+            </p>
+         </div>
+         <!--Tab Cloaking-->
+         <div id="popup">
+            <div>
+               <input id="title" placeholder="Enter a title">
+               <button onclick="setTitle()" >Set</button>
+            </div>
+            <div>  
+               <input id="icon" placeholder="Enter a favicon URL">
+               <button onclick="setIcon()" >Set</button>
+            </div>
          </div>
          <!--Scripts-->
          <script>
@@ -64,14 +68,32 @@
             popup.classList.toggle("open")
             }  
          </script>
+         <script src="app.js"></script>
          <script src="/assets/js/surf.js"></script>
          <script src="/assets/js/index.js"></script>
          <script src="/assets/js/navbar.js"></script>
          <script src="/assets/js/a:b.js"></script>
          <script src="/uv.bundle.js"></script>
          <script src="/uv.config.js"></script>
+         <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+         <script>
+            particlesJS.load('particles-js', 
+            'particles.json' , function(){
+                console.log('particles.json loaded ...');
+            });
+            
+            function whichkeyisit(e) { 
+             e = e || window.event; 
+             let charCode = e.keyCode || e.which; 
+             return String.fromCharCode(charCode); 
+            } 
+            
+            window.addEventListener('keypress', function (e) { 
+               if (whichkeyisit(e) == ",") {
+                   location.replace('https://google.com');
+               }
+            }, false);
+         </script>
       </div>
- </span></button>
-
    </body>
 </html>
