@@ -24,8 +24,11 @@ npm start
 ```
 
 # Credit
-- [Titanium Network](https://github.com/titaniumnetwork-dev)
+- [Frog22222](https://github.com/frog22222)
 - [QuiteAFancyEmerald](https://github.com/QuiteAFancyEmerald)
+- [Titanium Network](https://github.com/Titanium-Network)
+
+# Licence
 
 ```
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
