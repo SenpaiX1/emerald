@@ -1,6 +1,6 @@
 function abcloak() {
-  var  win = window.open()
-  var url = "https://emeraldfr.gq" 
+  var win = window.open()
+  var url = window.location.href
   var iframe = win.document.createElement('iframe')
   iframe.src = url;
   iframe.style.width = "100%";
