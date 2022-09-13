@@ -1,8 +1,8 @@
-# [Emerald Proxy](https://emeraldfr.gq)
-### A website unblocker based off the Alloy Proxy
+# [Emerald Proxy](https://emeraldpr.me)
+### A web proxy based off the Alloy Proxy backend
 
 # Domains
-[emeraldfr.gq](https://emeraldfr.gq)
+[emeraldpr.me](https://emeraldpr.me)
 
 # Deploy
 IMPORTANT!!!!
