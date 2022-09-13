@@ -1,0 +1,27 @@
+V1.6
+
+UPDATES:
+
+- Added arc.io to emerald
+
+TO-DO:
+
+- Implement ultraviolet and remove alloy
+- Add about:blank cloaking when the user clicks the "Go!" button
+- Make a devoted settings page that saves
+
+V1.5
+
+UPDATES:
+
+- Reverted back to old green and white theme
+- Fixed broken particles
+- Messed with particles.json a bit
+
+TO-DO:
+
+- Implement ultraviolet and remove alloy
+- Add a games page
+- Add about:blank cloaking when the user clicks the "Go!" button
+- Make a devoted settings page that saves
+- Add arc.io
