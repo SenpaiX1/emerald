@@ -1,10 +1,12 @@
 <html lang="en">
    <head>
+      <!-- Arc widget -->
+       <script async src="https://arc.io/widget.min.js#1dxUXTVE"></script>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <meta property="og:image" content="/assets/img/1736-emerald.png" />
-     <meta property="og:image" content="/assets/img/1736-emerald.png" />
-   <meta name="description" content="Emerald Proxy is an Alloy Based Proxy that includes tab cloaking and games" />
+      <meta property="og:image" content="/assets/img/1736-emerald.png" />
+      <meta property="og:image" content="/assets/img/1736-emerald.png" />
+      <meta name="description" content="Emerald Proxy is an Alloy Based Proxy that includes tab cloaking and games" />
       <!-- Important: Use &zwnj; to mess with keywords.  -->
       <title>Emer&zwnj;ald  Pro&zwnj;xy</title>
       <link rel="icon" type="image/png" href="assets/img/1736-emerald.png"/>
@@ -22,26 +24,26 @@
          <iframe id="frame" style="display:block; visibility: hidden;"></iframe> 
          <div id="img" class="show" style="cursor: pointer;">
             <i class="fa-solid fa-bars fa-3x" id="img" onclick="openNav()"></i>
-            </i>
          </div>
          <div id="mySidenav" class="sidenav">
             <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
             <a href="/index.html">Home</a>
             <a href="/bookmarklet.html">Bookmarklet</a>
-            <a href="/contact.html">Contact</a>
             <a onclick="abcloak()" style="cursor: pointer;">about:blank</a>
+            <a href="/changelog.txt">Changelog</a>           
+            <a href="/contact.html">Contact</a>
          </div>
          <div id="settings">
-            <button onclick="openTab()" class="button btn" style="vertical-align:middle"/>
-               <span>             <i class="fa-solid fa-gear fa-1x"></i></span>
+          <button onclick="openTab()" class="button btn" style="vertical-align:middle"/>
+            <span><i class="fa-solid fa-gear fa-1x"></i></span>
          </div>
          <div id="main">
          <h1> <span class="black_text">Em&zwnj;erald pro&zwnj;xy</span> </h1>
          <form class="url" method="POST">
-         <input name="url" id="iurl" autocomplete="off" placeholder="Browse the web" type="text">
-         <button class="button2" type="submit" id="alloydefault">G&zwnj;o!</button>
+         <input name="url" id="iurl" autocomplete="off" placeholder="https://www.example.com" type="text">
+         <button type="submit" id="alloydefault">G&zwnj;o!</button>
          </form>
-          <p>Pre&zwnj;ss " , " w&zwnj;hen a teac&zwnj;her is c&zwnj;om&zwnj;ing</p>
+         <p>Pre&zwnj;ss " , " w&zwnj;hen a teac&zwnj;her is c&zwnj;om&zwnj;ing</p>
          </div>
          <div id="footm">
             <p>
@@ -60,6 +62,7 @@
                <button onclick="setIcon()" >Set</button>
             </div>
          </div>
+      </div>
          <!--Scripts-->
          <script>
             function openTab() {
@@ -72,8 +75,8 @@
          <script src="/assets/js/index.js"></script>
          <script src="/assets/js/navbar.js"></script>
          <script src="/assets/js/a:b.js"></script>
-         <script src="/uv.bundle.js"></script>
-         <script src="/uv.config.js"></script>
+         <script src="/uv/uv.bundle.js"></script>
+         <script src="/uv/uv.config.js"></script>
          <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
          <script>
             particlesJS.load('particles-js', 
